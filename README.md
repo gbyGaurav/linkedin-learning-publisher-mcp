@@ -58,15 +58,15 @@ Caption + Technical Diagram
 - 📦 Supports Claude Desktop MCPB
 
 🧩 MCP Components
-Type	Name	Purpose
-Resource	learnings://today/raw	   Reads today's learning
-Resource	draft://pending	           Reads pending draft
-Prompt	format_linkedin_post	       Formats the LinkedIn post
-Tool	generate_linkedin_image	       Creates technical visual
-Tool	save_pending_draft	           Saves the draft
-Tool	get_pending_draft	           Views the draft
-Tool	cancel_pending_draft	       Cancels the draft
-Tool	post_to_linkedin	           Publishes to LinkedIn
+  Type	           Name	                        Purpose
+Resource	  learnings://today/raw	       Reads today's learning
+Resource	  draft://pending	           Reads pending draft
+Prompt	      format_linkedin_post	       Formats the LinkedIn post
+Tool	      generate_linkedin_image	   Creates technical visual
+Tool	      save_pending_draft	       Saves the draft
+Tool	      get_pending_draft	           Views the draft
+Tool	      cancel_pending_draft	       Cancels the draft
+Tool	      post_to_linkedin	           Publishes to LinkedIn
 
 
 🛠️ Tech Stack
