@@ -71,6 +71,8 @@ Tool	      post_to_linkedin	           Publishes to LinkedIn
 
 🛠️ Tech Stack
 Python · FastMCP · Claude Desktop · Playwright · SVG · uv
+
+
 🚀 Run Locally
 uv sync
 uv run playwright install chromium
