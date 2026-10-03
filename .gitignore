@@ -1,0 +1,16 @@
+generated_images/
+user_data/
+.venv/
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+*.png
+*.jpg
+*.jpeg
+*.html
+*.mcpb
+linkedin-learning-publisher.mcpb
+.pytest_cache/
+.ruff_cache/

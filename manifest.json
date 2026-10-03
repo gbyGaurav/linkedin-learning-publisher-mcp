@@ -1,0 +1,65 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/mcpb/main/schemas/mcpb-manifest-v0.4.schema.json",
+  "manifest_version": "0.4",
+  "name": "linkedin-learning-publisher",
+  "display_name": "LinkedIn Learning Publisher",
+  "version": "2.0.0",
+  "description": "Publish daily learning notes directly to LinkedIn with local technical diagram generation and pending draft confirmation using Playwright.",
+  "author": {
+    "name": "Gaurav"
+  },
+  "server": {
+    "type": "uv",
+    "entry_point": "server.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "${__dirname}",
+        "run",
+        "server.py"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "post_to_linkedin",
+      "description": "Publish approved post content and image to LinkedIn using Playwright browser automation"
+    },
+    {
+      "name": "generate_linkedin_image",
+      "description": "Generate a professional technical diagram for LinkedIn based on today's learning as a local SVG/PNG without external APIs"
+    },
+    {
+      "name": "save_pending_draft",
+      "description": "Save generated caption and image as a pending draft awaiting user confirmation"
+    },
+    {
+      "name": "get_pending_draft",
+      "description": "Retrieve details of the currently pending LinkedIn post draft"
+    },
+    {
+      "name": "cancel_pending_draft",
+      "description": "Cancel and discard the current pending LinkedIn post draft"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "format_linkedin_post",
+      "description": "Instruction template for formatting daily learning into caption + technical image prompt and managing the draft workflow",
+      "text": "Format today's learning into a LinkedIn post"
+    }
+  ],
+  "compatibility": {
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  },
+  "license": "MIT"
+}

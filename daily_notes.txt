@@ -1,0 +1,1 @@
+Today I worked on upgrading my LinkedIn Learning Publisher MCP server. I learned how MCP tools, resources, and prompts can be combined with Playwright to create a review-first LinkedIn publishing workflow. I also implemented local SVG-to-PNG technical diagram generation without using a paid image-generation API.

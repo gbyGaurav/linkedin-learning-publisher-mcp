@@ -1,0 +1,6 @@
+mcp<2
+fastmcp
+playwright
+python-dotenv
+pytest
+ruff
